@@ -48,7 +48,7 @@ def checkForValidField(field):
 
     return False
 
-with open('Inputs/DayFour.txt') as f:
+with open('Inputs/4.txt') as f:
 
     for index, line in enumerate(f.read().splitlines()):
         
@@ -75,5 +75,7 @@ if checkForValidPassportPart2(currentPassport):
     validPassportsPart2 += 1
 
 
+print ("Day Four")
 print ("Part 1 Valid Passports: " + str(validPassportsPart1))
 print ("Part 2 Valid Passports: " + str(validPassportsPart2))
+print ("")

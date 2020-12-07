@@ -1,6 +1,6 @@
 grid = []
 
-with open('Inputs/DayThree.txt') as f:
+with open('Inputs/3.txt') as f:
     for line in f.read().splitlines():
         grid.append(line)
 
@@ -23,7 +23,9 @@ def getEncTreesNo(r, d):
     
     return encTrees
 
+print ("Day Three")
 print("Part 1 Encountered Trees: " + str(getEncTreesNo(3, 1)))
 
 totalTrees = getEncTreesNo(1, 1) * getEncTreesNo(3, 1) * getEncTreesNo(5, 1) * getEncTreesNo(7, 1) * getEncTreesNo(1, 2)
 print("Part 2 Multiplied Encountered Trees: " + str(totalTrees))
+print ("")

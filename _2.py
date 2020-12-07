@@ -6,7 +6,7 @@ class Input:
 
 fileLines = []
 
-with open('Inputs/DayTwo.txt') as f:
+with open('Inputs/2.txt') as f:
     for line in f.read().splitlines():
         splitLine = line.split()
 
@@ -33,6 +33,7 @@ def part1():
 
     return correctPasswords
 
+print ("Day Two")
 print ("Part 1 Valid Passwords: " + str(part1()))
 
 def part2():
@@ -54,3 +55,4 @@ def part2():
     return correctPasswords
 
 print ("Part 2 Valid Passwords: " + str(part2()))
+print ("")

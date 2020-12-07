@@ -1,1 +1,7 @@
-import DaySix
+import _1
+import _2
+import _3
+import _4
+import _5
+import _6
+import _7

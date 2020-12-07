@@ -1,7 +1,7 @@
 sumOfAnswers = 0
 duplicateCheck = set()
 
-with open('Inputs/DaySix.txt') as f:
+with open('Inputs/6.txt') as f:
     for line in f.read().splitlines():
         if not line:
             #Next Line
@@ -12,6 +12,7 @@ with open('Inputs/DaySix.txt') as f:
                     duplicateCheck.add(char)
                     sumOfAnswers += 1
 
+print ("Day Six")
 print("Part 1, Total Checks: " + str(sumOfAnswers))
 
 sumOfAnswers = 0
@@ -19,7 +20,7 @@ noOfPeople = 0
 charDict = dict()
 groupLine = ""
 
-with open('Inputs/DaySix.txt') as f:
+with open('Inputs/6.txt') as f:
     for line in f.read().splitlines():
         if not line:
 
@@ -46,3 +47,4 @@ for char in charDict:
         sumOfAnswers += 1
 
 print("Part 2, Total Checks: " + str(sumOfAnswers))
+print ("")

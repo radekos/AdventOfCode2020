@@ -1,7 +1,7 @@
 
 fileLines = []
 
-with open('Inputs/DayFive.txt') as f:
+with open('Inputs/5.txt') as f:
     for line in f.read().splitlines():
         fileLines.append(line)
 
@@ -33,6 +33,7 @@ for boardingPass in fileLines:
                 highestID = multipliedId
             allIds.append(multipliedId)
 
+print ("Day Five")
 print("Part 1, Highest Seat ID: " + str(highestID))
 
 allIds.sort()
@@ -42,3 +43,5 @@ for id in allIds:
     if id != prevId and id != (prevId + 1):
         print("Part 2, My Seat ID: " + str(prevId + 1))
     prevId = id
+
+print ("")
