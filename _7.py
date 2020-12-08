@@ -71,3 +71,4 @@ for k, v in bagList.items():
 print("Day Seven")
 print("Part 1: " + str(goldPossible))
 print("Part 2: " + str(goldBagHolds))
+print("")
