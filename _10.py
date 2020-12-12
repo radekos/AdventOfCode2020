@@ -31,3 +31,11 @@ result = oneDiff * thrDiff
 
 print ("Day Ten")
 print ("Part 1: " + str(result))
+
+combinationScore = {0: 1}
+
+for n in numbers:
+    combinationScore[n] = combinationScore.get(n-3, 0) + combinationScore.get(n-2, 0) + combinationScore.get(n-1, 0)
+
+print ("Part 2: " + str(combinationScore[numbers[-1]]))
+print ("")
